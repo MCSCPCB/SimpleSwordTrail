@@ -43,11 +43,8 @@ function shareTriangleFit(programs) {
   });
   assert.equal(points.size, 9);
   assert.equal(fits.size, 1, 'All triangles must use the same affine solver');
-  const prepare = [...points].map(([slot, taper]) => taper + ['a', 'b'].map(end => {
-    const point = `t.${slot}_${end}`;
-    return axes.map(axis => `t.d${axis}=${point}${axis}-v.sword_trail_root_${axis};`).join('') +
-      axes.map((axis, k) => `${point}${axis}=(${axes.map((d, j) => `v.sword_trail_root${j}${k}*t.d${d}`).join('+')})/v.sword_trail_root_s${axis};`).join('');
-  }).join('')).join('');
+  // The generator now renders actor-space samples under a private identity root.
+  const prepare = [...points.values()].join('');
   return `((v.sword_trail_mesh0_stamp??-1)!=(v.sword_trail_frame??0))?{v.sword_trail_mesh0_stamp=v.sword_trail_frame;v.sword_trail_active&&v.sword_trail_ready?{${prepare}};t.solve_index=0;loop(16,{t.solve_run=0;${inputs.join('')}t.solve_valid=0;t.solve_run?{${[...fits][0]}};t.solve_valid?{${outputs.join('')}};t.solve_index=t.solve_index+1;});};`;
 }
 
