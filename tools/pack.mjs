@@ -12,7 +12,7 @@ function collect(relative = '') {
     if (entry.isDirectory()) collect(name + '/');
     else {
       let data = fs.readFileSync(path.join(root, 'src', name));
-      if (name.endsWith('.json')) data = Buffer.from(JSON.stringify(JSON.parse(data)));
+      if (/\.(?:json|material)$/.test(name)) data = Buffer.from(JSON.stringify(JSON.parse(data)));
       entries.push({name, data});
     }
   }
@@ -23,4 +23,4 @@ const output = path.join(root, 'pack', 'Simple Sword Trail.mcpack');
 fs.mkdirSync(path.dirname(output), {recursive: true});
 const bytes = zip(archived);
 fs.writeFileSync(output, bytes);
-console.log(`Created ${output}\n${entries.length} source files; ${archived.filter(e => e.name.endsWith('.brarchive')).length} brarchives; ${bytes.length} bytes`);
+console.log(`Created ${output}\n${entries.length} source files; ${archived.filter(e => e.name.endsWith('.brarchive')).length} brarchives; ${bytes.length} ZIP bytes; ${archived.reduce((sum, e) => sum + e.data.length, 0)} unpacked bytes`);

@@ -7,6 +7,7 @@ import {indexResources} from '../../Simple-Trail/src/resources.js';
 import {simplify} from './simplify.mjs';
 import {firstPersonSwordAttack} from './first-person-attack.mjs';
 import {firstPersonSwordHold} from './first-person-hold.mjs';
+import {optimizeResources} from './optimize.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const sample = path.resolve(root, '../ClothPhysics/_sample/[英文]Actions and Stuff 1.13');
@@ -63,7 +64,27 @@ for (const [name, data] of firstPersonSwordAttack(swordItems, read(example, 'ani
   output.set(name, data);
 }
 
-for (const [name, data] of output) {
+// Follow actual A&S animation/render dependencies before pruning local aliases.
+const references = new Map();
+function collectReferences(directory) {
+  for (const entry of fs.readdirSync(directory, {withFileTypes: true})) {
+    const filename = path.join(directory, entry.name);
+    if (entry.isDirectory()) collectReferences(filename);
+    else if (entry.name.endsWith('.json')) {
+      const doc = JSON.parse(fs.readFileSync(filename));
+      for (const kind of ['animations', 'animation_controllers', 'render_controllers']) {
+        for (const [id, value] of Object.entries(doc[kind] ?? {})) references.set(id, value);
+      }
+    }
+  }
+}
+for (const directory of ['animations', 'animation_controllers', 'render_controllers']) collectReferences(path.join(sample, directory));
+const optimized = optimizeResources(output, references);
+if (process.argv.includes('--check')) {
+  const {checkOptimization} = await import('./check-optimization.mjs');
+  await checkOptimization(output, optimized);
+}
+for (const [name, data] of optimized.files) {
   const destination = path.join(root, 'src', name);
   fs.mkdirSync(path.dirname(destination), {recursive: true});
   fs.writeFileSync(destination, data);
