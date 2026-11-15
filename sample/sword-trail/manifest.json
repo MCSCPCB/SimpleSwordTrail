@@ -1,0 +1,42 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Sword Trail — A&S 1.13 Patch",
+    "description": "Adds first- and third-person sword trails to Actions & Stuff 1.13. Place above Actions & Stuff.",
+    "uuid": "42030bb0-6af3-499b-a94e-af8b3c14668a",
+    "version": [
+      0,
+      0,
+      3
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      40
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "908e5215-6792-4f70-885f-254cb129ddce",
+      "version": [
+        0,
+        0,
+        3
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "d15d1028-e253-42dc-835a-cb74c48de638",
+      "version": [
+        1,
+        1,
+        68
+      ]
+    }
+  ],
+  "capabilities": [
+    "pbr"
+  ]
+}

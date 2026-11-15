@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sword_trail.ribbon": {
+      "geometry": "Geometry.st_ribbon",
+      "rebuild_animation_matrices": true,
+      "materials": [
+        {
+          "*": "Material.st_ribbon"
+        }
+      ],
+      "textures": [
+        "Texture.st_ribbon"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "st_strip0_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip1_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip2_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip3_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip4_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip5_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip6_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip7_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip8_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip9_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip10_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip11_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip12_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip13_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip14_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        },
+        {
+          "st_strip15_mesh": "(v.st_active??0)&&(v.st_ready??0)"
+        }
+      ],
+      "color": {
+        "r": 0.72,
+        "g": 0.88,
+        "b": 1,
+        "a": 0.38
+      },
+      "ignore_lighting": true
+    }
+  }
+}

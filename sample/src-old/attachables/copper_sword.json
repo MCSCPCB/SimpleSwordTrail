@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:copper_sword",
+      "materials": {
+        "default": "entity",
+        "enchanted": "sword_trail_item_glint",
+        "st_ribbon": "sword_trail_ribbon"
+      },
+      "textures": {
+        "default": "textures/items/copper_sword",
+        "enchanted": "textures/misc/enchanted_item_glint",
+        "st_ribbon": "textures/sword_trail/triangle"
+      },
+      "geometry": {
+        "default": "geometry.sword_trail.sword",
+        "st_ribbon": "geometry.sword_trail.ribbon"
+      },
+      "queryable_geometry": "default",
+      "scripts": {
+        "initialize": [
+          "v.st_ready=0;v.st_warm=0;v.st_active=0;v.st_attack=0;v.st_previous_attack=0;v.st_fp=0;v.st_previous_fp=0;v.st_acc=0;v.st_stamp=0;v.st_frame=0;v.st_last_time=-1;v.st_bone_clock=10000;v.st_owner_x=0;v.st_owner_y=0;v.st_owner_z=0;v.st_owner_yaw=0;v.st_live_age=1;v.st_live_ax=0;v.st_live_ay=0;v.st_live_az=0;v.st_live_bx=0;v.st_live_by=0;v.st_live_bz=0;v.st_h0_age=1;v.st_h0_ax=0;v.st_h0_ay=0;v.st_h0_az=0;v.st_h0_bx=0;v.st_h0_by=0;v.st_h0_bz=0;v.st_h1_age=1;v.st_h1_ax=0;v.st_h1_ay=0;v.st_h1_az=0;v.st_h1_bx=0;v.st_h1_by=0;v.st_h1_bz=0;v.st_h2_age=1;v.st_h2_ax=0;v.st_h2_ay=0;v.st_h2_az=0;v.st_h2_bx=0;v.st_h2_by=0;v.st_h2_bz=0;v.st_h3_age=1;v.st_h3_ax=0;v.st_h3_ay=0;v.st_h3_az=0;v.st_h3_bx=0;v.st_h3_by=0;v.st_h3_bz=0;v.st_h4_age=1;v.st_h4_ax=0;v.st_h4_ay=0;v.st_h4_az=0;v.st_h4_bx=0;v.st_h4_by=0;v.st_h4_bz=0;v.st_h5_age=1;v.st_h5_ax=0;v.st_h5_ay=0;v.st_h5_az=0;v.st_h5_bx=0;v.st_h5_by=0;v.st_h5_bz=0;v.st_h6_age=1;v.st_h6_ax=0;v.st_h6_ay=0;v.st_h6_az=0;v.st_h6_bx=0;v.st_h6_by=0;v.st_h6_bz=0;v.st_h7_age=1;v.st_h7_ax=0;v.st_h7_ay=0;v.st_h7_az=0;v.st_h7_bx=0;v.st_h7_by=0;v.st_h7_bz=0;v.st_mesh0_stamp=-1;v.st_mesh0_visible=0;v.st_mesh0_rx=0;v.st_mesh0_ry=0;v.st_mesh0_rz=0;v.st_mesh0_px=0;v.st_mesh0_py=0;v.st_mesh0_pz=0;v.st_mesh0_sx=0;v.st_mesh0_sy=0;v.st_mesh0_iz=0;v.st_mesh1_stamp=-1;v.st_mesh1_visible=0;v.st_mesh1_rx=0;v.st_mesh1_ry=0;v.st_mesh1_rz=0;v.st_mesh1_px=0;v.st_mesh1_py=0;v.st_mesh1_pz=0;v.st_mesh1_sx=0;v.st_mesh1_sy=0;v.st_mesh1_iz=0;v.st_mesh2_stamp=-1;v.st_mesh2_visible=0;v.st_mesh2_rx=0;v.st_mesh2_ry=0;v.st_mesh2_rz=0;v.st_mesh2_px=0;v.st_mesh2_py=0;v.st_mesh2_pz=0;v.st_mesh2_sx=0;v.st_mesh2_sy=0;v.st_mesh2_iz=0;v.st_mesh3_stamp=-1;v.st_mesh3_visible=0;v.st_mesh3_rx=0;v.st_mesh3_ry=0;v.st_mesh3_rz=0;v.st_mesh3_px=0;v.st_mesh3_py=0;v.st_mesh3_pz=0;v.st_mesh3_sx=0;v.st_mesh3_sy=0;v.st_mesh3_iz=0;v.st_mesh4_stamp=-1;v.st_mesh4_visible=0;v.st_mesh4_rx=0;v.st_mesh4_ry=0;v.st_mesh4_rz=0;v.st_mesh4_px=0;v.st_mesh4_py=0;v.st_mesh4_pz=0;v.st_mesh4_sx=0;v.st_mesh4_sy=0;v.st_mesh4_iz=0;v.st_mesh5_stamp=-1;v.st_mesh5_visible=0;v.st_mesh5_rx=0;v.st_mesh5_ry=0;v.st_mesh5_rz=0;v.st_mesh5_px=0;v.st_mesh5_py=0;v.st_mesh5_pz=0;v.st_mesh5_sx=0;v.st_mesh5_sy=0;v.st_mesh5_iz=0;v.st_mesh6_stamp=-1;v.st_mesh6_visible=0;v.st_mesh6_rx=0;v.st_mesh6_ry=0;v.st_mesh6_rz=0;v.st_mesh6_px=0;v.st_mesh6_py=0;v.st_mesh6_pz=0;v.st_mesh6_sx=0;v.st_mesh6_sy=0;v.st_mesh6_iz=0;v.st_mesh7_stamp=-1;v.st_mesh7_visible=0;v.st_mesh7_rx=0;v.st_mesh7_ry=0;v.st_mesh7_rz=0;v.st_mesh7_px=0;v.st_mesh7_py=0;v.st_mesh7_pz=0;v.st_mesh7_sx=0;v.st_mesh7_sy=0;v.st_mesh7_iz=0;v.st_mesh8_stamp=-1;v.st_mesh8_visible=0;v.st_mesh8_rx=0;v.st_mesh8_ry=0;v.st_mesh8_rz=0;v.st_mesh8_px=0;v.st_mesh8_py=0;v.st_mesh8_pz=0;v.st_mesh8_sx=0;v.st_mesh8_sy=0;v.st_mesh8_iz=0;v.st_mesh9_stamp=-1;v.st_mesh9_visible=0;v.st_mesh9_rx=0;v.st_mesh9_ry=0;v.st_mesh9_rz=0;v.st_mesh9_px=0;v.st_mesh9_py=0;v.st_mesh9_pz=0;v.st_mesh9_sx=0;v.st_mesh9_sy=0;v.st_mesh9_iz=0;v.st_mesh10_stamp=-1;v.st_mesh10_visible=0;v.st_mesh10_rx=0;v.st_mesh10_ry=0;v.st_mesh10_rz=0;v.st_mesh10_px=0;v.st_mesh10_py=0;v.st_mesh10_pz=0;v.st_mesh10_sx=0;v.st_mesh10_sy=0;v.st_mesh10_iz=0;v.st_mesh11_stamp=-1;v.st_mesh11_visible=0;v.st_mesh11_rx=0;v.st_mesh11_ry=0;v.st_mesh11_rz=0;v.st_mesh11_px=0;v.st_mesh11_py=0;v.st_mesh11_pz=0;v.st_mesh11_sx=0;v.st_mesh11_sy=0;v.st_mesh11_iz=0;v.st_mesh12_stamp=-1;v.st_mesh12_visible=0;v.st_mesh12_rx=0;v.st_mesh12_ry=0;v.st_mesh12_rz=0;v.st_mesh12_px=0;v.st_mesh12_py=0;v.st_mesh12_pz=0;v.st_mesh12_sx=0;v.st_mesh12_sy=0;v.st_mesh12_iz=0;v.st_mesh13_stamp=-1;v.st_mesh13_visible=0;v.st_mesh13_rx=0;v.st_mesh13_ry=0;v.st_mesh13_rz=0;v.st_mesh13_px=0;v.st_mesh13_py=0;v.st_mesh13_pz=0;v.st_mesh13_sx=0;v.st_mesh13_sy=0;v.st_mesh13_iz=0;v.st_mesh14_stamp=-1;v.st_mesh14_visible=0;v.st_mesh14_rx=0;v.st_mesh14_ry=0;v.st_mesh14_rz=0;v.st_mesh14_px=0;v.st_mesh14_py=0;v.st_mesh14_pz=0;v.st_mesh14_sx=0;v.st_mesh14_sy=0;v.st_mesh14_iz=0;v.st_mesh15_stamp=-1;v.st_mesh15_visible=0;v.st_mesh15_rx=0;v.st_mesh15_ry=0;v.st_mesh15_rz=0;v.st_mesh15_px=0;v.st_mesh15_py=0;v.st_mesh15_pz=0;v.st_mesh15_sx=0;v.st_mesh15_sy=0;v.st_mesh15_iz=0;"
+        ],
+        "pre_animation": [
+          "v.st_active=0;v.st_attack=0;v.st_fp=c.is_first_person;!q.is_in_ui&&!(v.is_paperdoll??0)&&q.is_attached?{q.is_owner_identifier_any('minecraft:player')&&c.item_slot=='main_hand'?{v.st_active=1;v.st_attack=c.owning_entity->v.attack_time;};};"
+        ],
+        "animate": [
+          {
+            "st_hold_first": "c.is_first_person"
+          },
+          {
+            "st_hold_third": "!c.is_first_person"
+          },
+          "st_display",
+          "st_capture"
+        ]
+      },
+      "animations": {
+        "st_hold_first": "animation.sword_trail.hold_first_person",
+        "st_hold_third": "animation.sword_trail.hold_third_person",
+        "st_display": "animation.sword_trail.display",
+        "st_capture": "controller.animation.sword_trail.capture"
+      },
+      "render_controllers": [
+        "controller.render.sword_trail.sword",
+        "controller.render.sword_trail.ribbon"
+      ]
+    }
+  }
+}

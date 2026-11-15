@@ -1,0 +1,37 @@
+{
+  "format_version": 3,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "uuid": "7f4db11d-a211-469c-97f8-65db799fac04",
+    "version": "1.0.0",
+    "min_engine_version": "1.26.40"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "a0ad4e86-11ce-424c-bc97-27845ad2e8cc",
+      "version": "1.0.0"
+    }
+  ],
+  "capabilities": [
+    "pbr"
+  ],
+  "metadata": {
+    "authors": [
+      "MINECRAFT-SCPCB"
+    ]
+  },
+  "subpacks": [
+    {
+      "folder_name": "actions_and_stuff_1_13",
+      "name": "Compatible with Actions & Stuff 1.13 §8Place this pack above Actions & Stuff",
+      "memory_performance_tier": 0
+    },
+    {
+      "folder_name": "default",
+      "name": "Default",
+      "memory_performance_tier": 0
+    }
+  ]
+}

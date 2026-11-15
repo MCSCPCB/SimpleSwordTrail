@@ -1,0 +1,107 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sword_trail.segment0": {
+      "geometry": "Geometry.sword_trail",
+      "rebuild_animation_matrices": true,
+      "materials": [
+        {
+          "*": "Material.sword_trail"
+        }
+      ],
+      "textures": [
+        "Texture.sword_trail"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "sword_trail_strip0_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip1_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        }
+      ],
+      "uv_anim": {
+        "offset": [
+          0,
+          "math.clamp((v.sword_trail_live_age??0)/0.2,0,1)"
+        ],
+        "scale": [
+          1,
+          "math.max(0,math.clamp((v.sword_trail_h0_age??0)/0.2,0,1)-math.clamp((v.sword_trail_live_age??0)/0.2,0,1))"
+        ]
+      }
+    },
+    "controller.render.sword_trail.segment1": {
+      "geometry": "Geometry.sword_trail",
+      "rebuild_animation_matrices": true,
+      "materials": [
+        {
+          "*": "Material.sword_trail"
+        }
+      ],
+      "textures": [
+        "Texture.sword_trail"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "sword_trail_strip2_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip3_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip4_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip5_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip6_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip7_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip8_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip9_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip10_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip11_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip12_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip13_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip14_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        },
+        {
+          "sword_trail_strip15_mesh": "(v.sword_trail_active??0)&&(v.sword_trail_ready??0)"
+        }
+      ],
+      "uv_anim": {
+        "offset": [
+          0,
+          "math.clamp((v.sword_trail_h0_age??0)/0.2,0,1)"
+        ],
+        "scale": [
+          1,
+          1
+        ]
+      }
+    }
+  }
+}

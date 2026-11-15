@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.sword_trail.hold_first_person": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "sword": {
+          "rotation": [
+            25.967112,
+            -12.768303,
+            -117.165825
+          ],
+          "position": [
+            0.072392,
+            3.324447,
+            0.685349
+          ],
+          "scale": [
+            0.725333,
+            0.725333,
+            0.725333
+          ]
+        }
+      }
+    },
+    "animation.sword_trail.hold_third_person": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "sword": {
+          "rotation": [
+            90,
+            0,
+            -90
+          ],
+          "position": [
+            0,
+            -2,
+            4
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    }
+  }
+}

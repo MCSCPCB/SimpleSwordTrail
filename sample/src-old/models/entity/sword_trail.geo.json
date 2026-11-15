@@ -1,0 +1,877 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.sword_trail.ribbon",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 6,
+        "visible_bounds_height": 5,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip0",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip0_scale",
+          "parent": "st_strip0",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip0_mesh",
+          "parent": "st_strip0_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip1",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip1_scale",
+          "parent": "st_strip1",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip1_mesh",
+          "parent": "st_strip1_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip2",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip2_scale",
+          "parent": "st_strip2",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip2_mesh",
+          "parent": "st_strip2_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip3",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip3_scale",
+          "parent": "st_strip3",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip3_mesh",
+          "parent": "st_strip3_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip4",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip4_scale",
+          "parent": "st_strip4",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip4_mesh",
+          "parent": "st_strip4_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip5",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip5_scale",
+          "parent": "st_strip5",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip5_mesh",
+          "parent": "st_strip5_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip6",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip6_scale",
+          "parent": "st_strip6",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip6_mesh",
+          "parent": "st_strip6_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip7",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip7_scale",
+          "parent": "st_strip7",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip7_mesh",
+          "parent": "st_strip7_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip8",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip8_scale",
+          "parent": "st_strip8",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip8_mesh",
+          "parent": "st_strip8_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip9",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip9_scale",
+          "parent": "st_strip9",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip9_mesh",
+          "parent": "st_strip9_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip10",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip10_scale",
+          "parent": "st_strip10",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip10_mesh",
+          "parent": "st_strip10_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip11",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip11_scale",
+          "parent": "st_strip11",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip11_mesh",
+          "parent": "st_strip11_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip12",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip12_scale",
+          "parent": "st_strip12",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip12_mesh",
+          "parent": "st_strip12_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip13",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip13_scale",
+          "parent": "st_strip13",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip13_mesh",
+          "parent": "st_strip13_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip14",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip14_scale",
+          "parent": "st_strip14",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip14_mesh",
+          "parent": "st_strip14_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "st_strip15",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip15_scale",
+          "parent": "st_strip15",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "st_strip15_mesh",
+          "parent": "st_strip15_scale",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                -0.5,
+                0
+              ],
+              "size": [
+                1,
+                1,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
