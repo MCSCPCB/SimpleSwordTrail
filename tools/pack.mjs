@@ -19,7 +19,7 @@ function collect(relative = '') {
 }
 collect();
 const archived = optimizePack(entries);
-const output = path.join(root, 'pack', 'Simple Sword Trail.mcpack');
+const output = path.join(root, 'pack', 'Slash Trail.mcpack');
 fs.mkdirSync(path.dirname(output), {recursive: true});
 const bytes = zip(archived);
 fs.writeFileSync(output, bytes);
